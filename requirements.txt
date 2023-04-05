@@ -1,0 +1,13 @@
+flask
+flask-sqlalchemy
+Flask-WTF
+flask-marshmallow
+marshmallow-sqlalchemy
+numpy
+scikit-learn
+pandas
+dash
+plotly
+dash-bootstrap-components
+# flask-login
+# PyJWT

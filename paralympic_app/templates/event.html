@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% set title = event[0].location %}
+{% block content %}
+
+
+<h1>{{ event[0].location}} {{ event[0].year }} ({{ event[0].type }})</h1>
+<ul>
+    <li id="start">Start: {{ event[0].start}}</li>
+    <li id="end">End: {{ event[0].end }} </li>
+    <li id="dis-inc">Disabilities included: {{ event[0].disabilities_included }}</li>
+    <li id="events">Events: {{ event[0].events}} </li>
+    <li id="countries">Countries: {{ event[0].countries }} </li>
+    <li id="participant-f">Female competitors: {{ event[0].female}} </li>
+    <li id="participant-m">Male competitors: {{ event[0].male }} </li>
+    <li id="participant-total">Total competitors: {{ event[0]. participants}} </li>
+    <li id="highlights">Event highlights: {{ event[0].highlights}} </li>
+</ul>
+
+{% endblock %}

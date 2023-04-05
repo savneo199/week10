@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% set title = 'Paralympics Home' %}
+{% block content %}
+
+<h1>Paralympic events</h1>
+<p>We have data for the following events</p>
+<ul>
+    {% for event in event_list %}
+    <li><a id="{{ event['event_id'] }}" href="{{ url_for('main.display_event', event_id=event['event_id'])}}">{{
+            event['location'] }} {{ event['year'] }}
+            ({{ event['type'] }})</a></li>
+    {% endfor %}
+</ul>
+
+
+{% endblock %}

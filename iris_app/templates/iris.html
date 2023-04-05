@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% set title = 'Iris Dataset' %}
+{% block content %}
+
+<table>
+    <tr>
+        <th>Species</th>
+        <th>Sepal length</th>
+        <th>Sepal width</th>
+        <th>Petal length</th>
+        <th>Petal width</th>
+    </tr>
+    {% for iris in iris_list %}
+    <tr>
+        <td>{{iris.species}}</td>
+        <td>{{iris.sepal_length}}</td>
+        <td>{{iris.sepal_width}}</td>
+        <td>{{iris.petal_length}}</td>
+        <td>{{iris.petal_width}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}
